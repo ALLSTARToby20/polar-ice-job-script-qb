@@ -31,7 +31,7 @@ label = "Shop",
             slot = 3,
         },
         [4] = {
-            name = "vanilla-essence",
+            name = "vanilla_essence",
             price = 10,
             amount = 100,
             info = {},
