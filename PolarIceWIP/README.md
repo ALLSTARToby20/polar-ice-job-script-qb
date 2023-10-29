@@ -1,0 +1,19 @@
+【A】【L】【L】【S】【T】【A】【R】 【A】【L】【L】【S】【T】【A】【R】 【A】【L】【L】【S】【T】【A】【R】 【A】【L】【L】【S】【T】【A】【R】【A】【L】【L】【S】【T】【A】【R】 【A】【L】【L】【S】【T】【A】【R】 【A】【L】【L】【S】【T】【A】【R】 【A】【L】【L】【S】【T】【A】【R】
+
+
+
+
+Shared items lua 
+
+    -- polar ice 
+    ['chocolate_icecream']                     = {['name'] = 'chocolate_icecream',                       ['label'] = 'chocolate ice cream',              ['weight'] = 0.2,            ['type'] = 'item',         ['image'] = 'chocolate_icecream.png',             ['unique'] = false,         ['useable'] = true,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'chocolate ice cream'},
+    ['gelato']                     = {['name'] = 'gelato',                       ['label'] = 'gelato',              ['weight'] = 0.2,            ['type'] = 'item',         ['image'] = 'gelato.png',             ['unique'] = false,         ['useable'] = true,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'gelato'},
+    ['strawberry_icecream']                     = {['name'] = 'strawberry_icecream',                       ['label'] = 'strawberry ice cream',              ['weight'] = 0.2,            ['type'] = 'item',         ['image'] = 'strawberry_icecream.png',             ['unique'] = false,         ['useable'] = true,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'strawberry icecream'},
+    ['snowcone']                     = {['name'] = 'snowcone',                       ['label'] = 'snowcone',              ['weight'] = 0.2,            ['type'] = 'item',         ['image'] = 'snowcone.png',             ['unique'] = false,         ['useable'] = true,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'snowcone'},
+    ['vanilla_icecream']                     = {['name'] = 'vanilla_icecream',                       ['label'] = 'vanilla ice cream',              ['weight'] = 0.2,            ['type'] = 'item',         ['image'] = 'vanilla_icecream.png',             ['unique'] = false,         ['useable'] = true,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'vanilla ice cream'},
+    ['milk']                     = {['name'] = 'milk',                       ['label'] = 'milk',              ['weight'] = 0.2,            ['type'] = 'item',         ['image'] = 'milk.png',             ['unique'] = false,         ['useable'] = true,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'milk'},
+    ['syrup']                     = {['name'] = 'syrup',                       ['label'] = 'syrup',              ['weight'] = 0.2,            ['type'] = 'item',         ['image'] = 'syrup.png',             ['unique'] = false,         ['useable'] = true,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'syrup'},
+    ['chocolate2']                     = {['name'] = 'chocolate2',                       ['label'] = 'chocolate',              ['weight'] = 0.2,            ['type'] = 'item',         ['image'] = 'chocolate2.png',             ['unique'] = false,         ['useable'] = true,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'chocolate'},
+    ['strawberry']                     = {['name'] = 'strawberry',                       ['label'] = 'strawberry',              ['weight'] = 0.2,            ['type'] = 'item',         ['image'] = 'strawberry.png',             ['unique'] = false,         ['useable'] = true,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'strawberry'},
+    ['vanilla_essence']                     = {['name'] = 'vanilla_essence',                       ['label'] = 'vanilla essence',              ['weight'] = 0.2,            ['type'] = 'item',         ['image'] = 'vanilla_essence.png',             ['unique'] = false,         ['useable'] = true,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'vanilla essence'},
+  
