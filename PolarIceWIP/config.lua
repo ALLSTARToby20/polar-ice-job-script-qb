@@ -40,7 +40,7 @@ label = "Shop",
         },
         [5] = {
             name = "strawberry",
-            price = 100,
+            price = 10,
             amount = 100,
             info = {},
             type = "item",
@@ -53,6 +53,14 @@ label = "Shop",
             info = {},
             type = "item",
             slot = 6,
+        },
+        [7] = {
+            name = "coffee_bean",
+            price = 10,
+            amount = 100,
+            info = {},
+            type = "item",
+            slot = 7,
         },
     }
 }

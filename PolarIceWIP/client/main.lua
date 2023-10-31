@@ -203,6 +203,66 @@ RegisterNetEvent("AS-polar:snowcone", function()
 end)
 
 TriggerServerEvent('AS-polar:server:snowcone')
+
+RegisterNetEvent("AS-polar:coffee_icecream", function()
+    if onDuty then
+    	QBCore.Functions.TriggerCallback('AS-polar:server:get:coffee_icecream', function(HasItems)  
+    		if HasItems then
+				QBCore.Functions.Progressbar("pickup_sla", "Making coffee icecream..", 4000, false, true, {
+					disableMovement = true,
+					disableCarMovement = true,
+					disableMouse = false,
+					disableCombat = true,
+				}, {
+					animDict = "mp_common",
+					anim = "givetake1_a",
+					flags = 8,
+				}, {}, {}, function() -- Done
+					TriggerServerEvent('AS-polar:server:coffee_icecream')
+                    QBCore.Functions.Notify("You made a coffee icecream", "success")
+				end, function()
+					QBCore.Functions.Notify("Cancelled..", "error")
+				end)
+			else
+   				QBCore.Functions.Notify("You dont have the ingredients to make this", "error")
+			end
+		end)
+	else 
+		QBCore.Functions.Notify("You must be Clocked into work", "error")
+	end
+end)
+
+TriggerServerEvent('AS-polar:server:coffee_icecream')
+
+RegisterNetEvent("AS-polar:vanilla_icecream", function()
+    if onDuty then
+    	QBCore.Functions.TriggerCallback('AS-polar:server:get:vanilla_icecream', function(HasItems)  
+    		if HasItems then
+				QBCore.Functions.Progressbar("pickup_sla", "Making vanilla icecream..", 4000, false, true, {
+					disableMovement = true,
+					disableCarMovement = true,
+					disableMouse = false,
+					disableCombat = true,
+				}, {
+					animDict = "mp_common",
+					anim = "givetake1_a",
+					flags = 8,
+				}, {}, {}, function() -- Done
+					TriggerServerEvent('AS-polar:server:vanilla_icecream')
+                    QBCore.Functions.Notify("You made a vanilla icecream", "success")
+				end, function()
+					QBCore.Functions.Notify("Cancelled..", "error")
+				end)
+			else
+   				QBCore.Functions.Notify("You dont have the ingredients to make this", "error")
+			end
+		end)
+	else 
+		QBCore.Functions.Notify("You must be Clocked into work", "error")
+	end
+end)
+
+TriggerServerEvent('AS-polar:server:vanilla_icecream')
    
 RegisterNetEvent("AS-polar:shop", function()
     TriggerServerEvent("inventory:server:OpenInventory", "shop", "polar", Config.Items)

@@ -148,12 +148,32 @@ RegisterNetEvent('AS-polar:PaanMenu', function(data)
             }
         },
         {
+            header = "coffee ice cream",
+            txt = "coffee bean, milk, ice cream cone",
+            params = {
+                event = "AS-polar:coffee_icecream",
+                args = {
+                    number = 5,
+                }
+            }
+        },
+        {
+            header = "vanilla ice cream",
+            txt = "vanilla essence, milk, ice cream cone",
+            params = {
+                event = "AS-polar:vanilla_icecream",
+                args = {
+                    number = 6,
+                }
+            }
+        },
+        {
             header = "Close",
             txt = "",
             params = {
                 event = "",
                 args = {
-                    number = 5,
+                    number = 7,
                 }
             }
         },
