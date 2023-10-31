@@ -46,5 +46,13 @@ label = "Shop",
             type = "item",
             slot = 5,
         },
+        [6] = {
+            name = "icecream_cone",
+            price = 10,
+            amount = 100,
+            info = {},
+            type = "item",
+            slot = 6,
+        },
     }
 }

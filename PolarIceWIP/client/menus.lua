@@ -109,7 +109,7 @@ RegisterNetEvent('AS-polar:PaanMenu', function(data)
 
         {
             header = "chocolate ice cream",
-            txt = "milk, chocolate",
+            txt = "milk, chocolate, cone",
             params = {
                 event = "AS-polar:chocolate_icecream",
                 args = {
@@ -129,7 +129,7 @@ RegisterNetEvent('AS-polar:PaanMenu', function(data)
         },
         {
             header = "strawberry ice cream",
-            txt = "milk, chocolate, strawberry",
+            txt = "milk, chocolate, strawberry, cone",
             params = {
                 event = "AS-polar:strawberry_icecream",
                 args = {

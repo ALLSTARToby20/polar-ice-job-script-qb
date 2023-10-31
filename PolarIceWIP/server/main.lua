@@ -45,7 +45,8 @@ QBCore.Functions.CreateCallback('AS-polar:server:get:chocolate_icecream', functi
     local Player = QBCore.Functions.GetPlayer(src)
     local chocolate2 = Player.Functions.GetItemByName("chocolate2")
     local milk = Player.Functions.GetItemByName("milk")
-    if chocolate2 ~= nil and milk ~= nil then
+    local icecream_cone = Player.Functions.GetItemByName("icecream_cone")
+    if chocolate2 ~= nil and milk ~= nil and icecream_cone ~= nil then
         cb(true)
     else
         cb(false)
@@ -58,9 +59,11 @@ RegisterNetEvent('AS-polar:server:chocolate_icecream', function()
     if not Player then return end
     Player.Functions.RemoveItem('chocolate2', 1)
     Player.Functions.RemoveItem('milk', 1)
+    Player.Functions.RemoveItem('icecream_cone', 1)
     Player.Functions.AddItem('chocolate_icecream', 1)
     TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items["milk"], "remove")
     TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items["chocolate2"], "remove")
+    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items["icecream_cone"], "remove")
     TriggerClientEvent('inventory:client:itembox', src, QBCore.Shared.Items["chocolate_icecream"], "add")
 end)
 
@@ -96,7 +99,8 @@ QBCore.Functions.CreateCallback('AS-polar:server:get:strawberry_icecream', funct
     local Player = QBCore.Functions.GetPlayer(src)
     local strawberry = Player.Functions.GetItemByName("strawberry")
     local milk = Player.Functions.GetItemByName("milk")
-    if strawberry ~= nil and milk ~= nil then
+    local icecream_cone = Player.Functions.GetItemByName("icecream_cone")
+    if strawberry ~= nil and milk ~= nil and icecream_cone ~= nil then
         cb(true)
     else
         cb(false)
@@ -109,9 +113,11 @@ RegisterNetEvent('AS-polar:server:strawberry_icecream', function()
     if not Player then return end
     Player.Functions.RemoveItem('strawberry', 1)
     Player.Functions.RemoveItem('milk', 1)
+    Player.Functions.RemoveItem('icecream_cone', 1)
     Player.Functions.AddItem('strawberry_icecream', 1)
     TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items["milk"], "remove")
     TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items["strawberry"], "remove")
+    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items["icecream_cone"], "remove")
     TriggerClientEvent('inventory:client:itembox', src, QBCore.Shared.Items["strawberry_icecream"], "add")
 end)
 
